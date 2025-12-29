@@ -31,7 +31,7 @@ class FileDetective:
                 with open(db_path, 'r', encoding='utf-8') as f:
                     FileDetective.EXTENSION_DB = json.load(f)
         except Exception:
-            pass # 없으면 없는 대로 진행
+            pass
 
     def run_investigation(self):
         """수사를 시작하고 결과(딕셔너리)를 반환"""
@@ -60,7 +60,7 @@ class FileDetective:
         # 4. 유전자 정보 (매직 넘버 & 해시)
         self.report['structure_evidence'] = self._get_structure_info()
 
-        # [NEW] 사전 검색 & 카테고리 확인
+        # 사전 검색 & 카테고리 확인
         clean_ext = self.report['basic_info']['extension'].replace('.', '').lower()
         
         # filetype 라이브러리가 찾은 진짜 확장자가 있으면 그걸 우선시함
@@ -224,7 +224,6 @@ class FileDetective:
         except: pass
         return neighbors
     
-   # 기존 consult_ai 메서드를 이걸로 교체하세요!
     def consult_ai(self, api_key, model_name="gemini-1.5-flash"):
         """수집된 증거를 Gemini에게 보내 분석 요청 (모델 선택 가능)"""
         if not self.report:
@@ -237,7 +236,7 @@ class FileDetective:
             # 1. 설정
             genai.configure(api_key=api_key)
             
-            # 2. 모델 선택 (사용자가 선택한 모델명 적용) 👈 여기가 핵심!
+            # 2. 모델 선택 (사용자가 선택한 모델명 적용)
             model = genai.GenerativeModel(model_name)
 
             # 3. 데이터 다이어트 (429 에러 방지용)

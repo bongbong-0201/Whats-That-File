@@ -3,7 +3,7 @@ from tkinter import ttk, filedialog, scrolledtext, messagebox
 import threading
 import json
 import os
-import detective  # detective.py가 있어야 함
+import detective
 
 class DetectiveApp:
     def __init__(self, root):
@@ -34,21 +34,21 @@ class DetectiveApp:
         self.api_entry = tk.Entry(setting_frame, width=30, show="*")
         self.api_entry.grid(row=0, column=1, padx=5)
 
-        # [모델 선택 콤보박스] 👈 NEW!
+        # [모델 선택 콤보박스]
         tk.Label(setting_frame, text="🧠 Model:", font=("Malgun Gothic", 10, "bold"), 
                  bg=self.bg_color, fg="#00ffff").grid(row=0, column=2, padx=5, sticky="e")
         
         # 구글 공식 문서 기반 모델 리스트
         self.model_list = [
-            
+
             "gemini-2.5-pro",
-            "gemini-2.5-flash-lite",       # 빠르고 저렴 (추천)
-            "gemini-2.5-flash",         # 똑똑함
-            "gemini-3-flash-preview",   # 최신 실험용
-            "gemini-3-pro-preview"         # 실험용
+            "gemini-2.5-flash-lite",      
+            "gemini-2.5-flash",        
+            "gemini-3-flash-preview",   
+            "gemini-3-pro-preview"        
         ]
         self.model_combo = ttk.Combobox(setting_frame, values=self.model_list, state="readonly", width=20)
-        self.model_combo.current(0) # 기본값: 1.5-flash
+        self.model_combo.current(0)
         self.model_combo.grid(row=0, column=3, padx=5)
 
         # [저장된 설정 불러오기]
@@ -98,7 +98,6 @@ class DetectiveApp:
         try:
             # 1. 파일/폴더 분석
             if os.path.isdir(target_path):
-                # (폴더 로직 생략 없이 그대로 구현)
                 largest_file = None
                 max_size = 0
                 count = 0
@@ -126,7 +125,7 @@ class DetectiveApp:
             
             # 2. AI 호출 (모델명 사용)
             api_key = self.api_entry.get().strip()
-            selected_model = self.model_combo.get() # 👈 선택된 모델 가져오기!
+            selected_model = self.model_combo.get()
 
             if api_key:
                 # 설정 저장

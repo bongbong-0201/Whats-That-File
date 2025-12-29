@@ -40,6 +40,17 @@ AI 탐정(Gemini)이 파일의 내부를 뜯어보고(Forensic), 삭제해도 �
 * **AI:** Google Gemini API
 * **Forensic Libs:** pefile, filetype
 
+## 📂 Project Structure (프로젝트 구조)
+
+```text
+Whats-That-File/
+├── detective.py        # 🧠 The Brain: 파일 분석 로직 & AI 통신 담당
+├── detective_gui.py    # 🎨 The Face: 사용자 인터페이스(GUI) & 메인 실행 파일
+├── extensions.json     # 📚 Database: 확장자 정보 데이터 (오픈소스 기반)
+├── config.json         # ⚙️ Settings: API 키 및 모델 설정 저장 (자동 생성됨)
+├── requirements.txt    # 📦 Dependencies: 필요한 파이썬 라이브러리 목록
+└── README.md           # 📄 Documentation: 프로젝트 설명서
+
 ## 🙌 Credits & Acknowledgements
 
 이 프로젝트는 다음 오픈소스 프로젝트와 도구들의 도움을 받아 제작되었습니다.
