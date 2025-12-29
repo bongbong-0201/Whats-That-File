@@ -19,13 +19,12 @@ AI 탐정(Gemini)이 파일의 내부를 뜯어보고(Forensic), 삭제해도 �
    cd FileDetective
    pip install -r requirements.txt
 
-```
+    ```
 
 2. **실행**
     ```bash
     python detective_gui.py
-
-```
+    ```
 
 
 3. **API 키 설정**
