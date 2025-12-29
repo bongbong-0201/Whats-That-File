@@ -46,7 +46,6 @@ AI 탐정(Gemini)이 파일의 내부를 뜯어보고(Forensic), 삭제해도 �
 
 ## 📂 Project Structure (프로젝트 구조)
 
-```text
 Whats-That-File/
 ├── detective.py        # 🧠 The Brain: 파일 분석 로직 & AI 통신 담당
 ├── detective_gui.py    # 🎨 The Face: 사용자 인터페이스(GUI) & 메인 실행 파일
