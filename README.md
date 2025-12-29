@@ -54,6 +54,7 @@ Whats-That-File/
 ├── config.json         # ⚙️ Settings: API 키 및 모델 설정 저장 (자동 생성됨)
 ├── requirements.txt    # 📦 Dependencies: 필요한 파이썬 라이브러리 목록
 └── README.md           # 📄 Documentation: 프로젝트 설명서
+```
 
 ## 🙌 Credits & Acknowledgements
 
