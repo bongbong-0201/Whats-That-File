@@ -15,7 +15,7 @@ AI 탐정(Gemini)이 파일의 내부를 뜯어보고(Forensic), 삭제해도 �
 
 1. **설치**
    ```bash
-   git clone [https://github.com/님의아이디/FileDetective.git](https://github.com/님의아이디/FileDetective.git)
+   git clone https://github.com/bongbong-0201/Whats-That-File.git
    cd FileDetective
    pip install -r requirements.txt
 
