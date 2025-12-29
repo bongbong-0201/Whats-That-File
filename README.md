@@ -1,5 +1,5 @@
 
-# 🕵️‍♂️ AI File Detective (AI 파일 탐정)
+# 🕵️‍♂️ Whats That File? (AI File Detective)
 
 **"이 파일... 지워도 되는 걸까?"**
 스팀 게임 모드 파일, 정체불명의 시스템 파일 때문에 고민하지 마세요.
