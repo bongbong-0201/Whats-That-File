@@ -71,6 +71,8 @@ Whats-That-File/
 이 프로젝트는 이제 막 시작되었습니다! 버그 제보나 기능 추가는 언제든 환영합니다.
 (This project assumes use of AI-assisted coding tools.)
 
+**"Special Thanks to: Gemini (AI Pair Programmer)"**
+
 ## 📜 License
 This project is licensed under the **MIT License**.
 
@@ -78,4 +80,3 @@ This project is licensed under the **MIT License**.
 
 
 
-**"Special Thanks to: Gemini (AI Pair Programmer)"**
