@@ -13,13 +13,17 @@ AI 탐정(Gemini)이 파일의 내부를 뜯어보고(Forensic), 삭제해도 �
 
 ## 🚀 설치 및 실행 방법
 
-1. **설치**
-   ```bash
-   git clone https://github.com/bongbong-0201/Whats-That-File.git
-   cd FileDetective
-   pip install -r requirements.txt
-
-    ```
+1. **소스코드 내려받기**
+   - **방법 A (권장):** 터미널에서 아래 명령어 입력
+     ```bash
+     git clone [https://github.com/bongbong-0201/Whats-That-File.git](https://github.com/bongbong-0201/Whats-That-File.git)
+     cd Whats-That-File
+     ```
+   - **방법 B:** 본 페이지 상단의 `Code` -> `Download ZIP` 클릭 후 압축 해제
+     - 주의: 이 경우 폴더명이 `Whats-That-File-main`일 수 있으므로 해당 폴더로 이동하세요.
+     ```bash
+     cd Whats-That-File-main
+     ```
 
 2. **실행**
     ```bash
