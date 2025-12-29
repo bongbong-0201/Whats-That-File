@@ -22,8 +22,8 @@ AI 탐정(Gemini)이 파일의 내부를 뜯어보고(Forensic), 삭제해도 �
 ```
 
 2. **실행**
-```bash
-python detective_gui.py
+    ```bash
+    python detective_gui.py
 
 ```
 
